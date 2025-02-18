@@ -9,7 +9,7 @@ const {
   getUserDashboard,
   getUserName,
   updateGoals
-} = require("../controllers/gymDashboardController");
+} = require("../Controllers/gymDashboardController");
 const GymDashboard = require("../models/GymDashboard");
 
 router.post("/:userId/create", checkUserExists, createGymDashboard);
